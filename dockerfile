@@ -9,6 +9,8 @@ RUN npm install
 # Copy all of the app files into the image 
 COPY . .
 
+LABEL org.opencontainers.image.source=https://github.com/annisa-rachma/docker-test
+
 # FROM node:12-alpine
 # # copy from build image
 # COPY --from=build_image /usr/src/app/dist ./dist
